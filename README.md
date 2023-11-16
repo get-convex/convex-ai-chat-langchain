@@ -2,7 +2,7 @@
 
 An example of building AI-powered chat interface using [LangChain](https://www.langchain.com/) and its Convex integration.
 
-![Screenshot of a docs website with AI chat modal open](./screenshot.png "AI chat UI")
+![Screenshot of a website with AI chat modal open](./screenshot.png "AI chat UI")
 
 ## Overview:
 
