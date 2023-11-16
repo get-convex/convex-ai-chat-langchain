@@ -1,5 +1,5 @@
 {
-  "name": "convex-ai-chat-openai",
+  "name": "convex-ai-chat-langchain",
   "private": true,
   "version": "0.0.0",
   "type": "module",
