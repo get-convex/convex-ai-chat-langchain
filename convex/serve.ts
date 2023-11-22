@@ -7,6 +7,8 @@ import { ConvexChatMessageHistory } from "langchain/stores/message/convex";
 import { ConvexVectorStore } from "langchain/vectorstores/convex";
 import { internalAction } from "./_generated/server";
 
+const OPENAI_MODEL = "gpt-3.5-turbo";
+
 export const answer = internalAction({
   args: {
     sessionId: v.string(),
@@ -15,7 +17,7 @@ export const answer = internalAction({
   handler: async (ctx, { sessionId, message }) => {
     const vectorStore = new ConvexVectorStore(new OpenAIEmbeddings(), { ctx });
 
-    const model = new ChatOpenAI({ modelName: "gpt-4-32k" });
+    const model = new ChatOpenAI({ modelName: OPENAI_MODEL });
     const memory = new BufferMemory({
       chatHistory: new ConvexChatMessageHistory({ sessionId, ctx }),
       memoryKey: "chat_history",
