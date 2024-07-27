@@ -1,1 +1,1 @@
-export * from "langchain/util/convex";
+export * from "@langchain/community/utils/convex";

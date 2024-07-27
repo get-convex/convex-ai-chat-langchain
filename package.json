@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
+    "@langchain/community": "^0.2.20",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -47,7 +48,7 @@
     "cmdk": "^0.2.0",
     "convex": "^1.13.2",
     "date-fns": "^2.30.0",
-    "langchain": "^0.0.189",
+    "langchain": "^0.2.11",
     "modern-async": "^1.1.4",
     "openai": "^4.19.0",
     "react": "^18.2.0",

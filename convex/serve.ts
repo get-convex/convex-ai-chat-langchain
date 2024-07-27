@@ -1,10 +1,10 @@
 import { v } from "convex/values";
 import { ConversationalRetrievalQAChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { ChatOpenAI } from "@langchain/openai";
+import { OpenAIEmbeddings } from "@langchain/openai";
 import { BufferMemory } from "langchain/memory";
-import { ConvexChatMessageHistory } from "langchain/stores/message/convex";
-import { ConvexVectorStore } from "langchain/vectorstores/convex";
+import { ConvexChatMessageHistory } from "@langchain/community/stores/message/convex";
+import { ConvexVectorStore } from "@langchain/community/vectorstores/convex";
 import { internalAction } from "./_generated/server";
 
 const OPENAI_MODEL = "gpt-3.5-turbo";
